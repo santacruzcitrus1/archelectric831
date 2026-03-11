@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Arch Electric — Central Coast Electrician</title>
+    <meta name="description" content="Contact Arch Electric for a free estimate. Call (831) 359-8747 or fill out our online form. Serving Monterey, Santa Cruz & San Benito counties.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Arch Electric" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">ARCH ELECTRIC</span>
+                    <span class="logo-tagline">The Energy Experts</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-nav">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for a free estimate. We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">📞</div>
+                        <div>
+                            <h3>Call or Text</h3>
+                            <p><a href="tel:8313598747">(831) 359-8747</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Prunedale, CA<br>Serving the Tri-County Area</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">🕐</div>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday – Friday: 7:00 AM – 6:00 PM<br>Saturday: By Appointment<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">📜</div>
+                        <div>
+                            <h3>License</h3>
+                            <p>CA Contractor License #945992<br>Fully Licensed & Insured</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">🌐</div>
+                        <div>
+                            <h3>Follow Us</h3>
+                            <p><a href="https://www.facebook.com/p/Arch-Electric-61555280070188/" target="_blank">Facebook →</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Request a Free Estimate</h2>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(831) 555-1234" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="panel">Panel Upgrade</option>
+                                <option value="residential">Residential Electrical</option>
+                                <option value="agricultural">Agricultural Electrical</option>
+                                <option value="troubleshooting">Troubleshooting & Repair</option>
+                                <option value="lighting">Lighting</option>
+                                <option value="new-construction">New Construction / Remodel</option>
+                                <option value="ev-charger">EV Charger Installation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Project</label>
+                            <textarea id="message" name="message" placeholder="Describe what you need help with..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map placeholder -->
+    <section style="background: var(--light); padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h2 class="section-title">Our Service Area</h2>
+            <p class="section-sub">Based in Prunedale, serving all of Monterey, Santa Cruz & San Benito counties.</p>
+            <div style="background: var(--gray-dark); border-radius: 8px; height: 300px; display: flex; align-items: center; justify-content: center; color: var(--gray-light); font-size: 1.2rem;">
+                📍 Interactive Map — Google Maps embed goes here
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo footer-logo">
+                        <img src="logo.jpg" alt="Arch Electric" class="logo-img">
+                        <div class="logo-text">
+                            <span class="logo-name">ARCH ELECTRIC</span>
+                            <span class="logo-tagline">The Energy Experts</span>
+                        </div>
+                    </div>
+                    <p>Full-service electrical contractor serving the Tri-County area since 2009.</p>
+                    <p>CA License #945992</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📞 <a href="tel:8313598747">(831) 359-8747</a></li>
+                        <li>📍 Prunedale, CA</li>
+                        <li>🕐 Mon-Fri: 7AM - 6PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>Monterey County</li>
+                        <li>Santa Cruz County</li>
+                        <li>San Benito County</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arch Electric. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
