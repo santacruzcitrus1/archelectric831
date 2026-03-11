@@ -1,7 +1,9 @@
 /* === Variables === */
 :root {
-    --red: #C41E3A;
-    --red-dark: #9B1830;
+    --red: #9B1B30;
+    --red-dark: #7A1526;
+    --red-bright: #C41E3A;
+    --maroon: #5C1220;
     --dark: #1a1a1a;
     --darker: #111111;
     --gray-dark: #2a2a2a;
@@ -9,7 +11,8 @@
     --gray-light: #999;
     --light: #f5f5f5;
     --white: #ffffff;
-    --yellow: #FFD700;
+    --gold: #D4A843;
+    --yellow: #D4A843;
     --font-heading: 'Oswald', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
