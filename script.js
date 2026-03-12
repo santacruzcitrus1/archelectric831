@@ -27,16 +27,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact form handler (demo)
-function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target;
-    const name = form.querySelector('#name').value;
-    
-    // In production, this would submit to a backend
-    alert(`Thanks ${name}! This is a demo site. In the live version, your request would be sent directly to Arch Electric. For now, please call (831) 359-8747.`);
-    form.reset();
-}
+// Contact form — powered by Formsubmit.co (submissions go to Levi's email)
 
 // Animate elements on scroll
 const observerOptions = {

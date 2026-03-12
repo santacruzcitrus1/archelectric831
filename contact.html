@@ -81,7 +81,12 @@
                 </div>
                 <div class="contact-form">
                     <h2>Request a Free Estimate</h2>
-                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <form id="contactForm" action="https://formsubmit.co/mentzlevi@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="🔌 New Free Estimate Request — Arch Electric">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://archelectric831.com/thank-you.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" placeholder="John Smith" required>
