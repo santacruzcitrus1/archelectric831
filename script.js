@@ -27,6 +27,16 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile dropdown toggle (Tips menu)
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            toggle.closest('.nav-dropdown').classList.toggle('open');
+        }
+    });
+});
+
 // Contact form — powered by Formsubmit.co (submissions go to Levi's email)
 
 // Animate elements on scroll
