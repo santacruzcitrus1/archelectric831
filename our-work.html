@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work | Arch Electric — Quality Projects Across the Central Coast</title>
+    <meta name="description" content="See our recent electrical projects across Santa Cruz, Monterey & San Benito counties. Panel upgrades, EV chargers, lighting installations, and commercial work by licensed electricians.">
+    <meta property="og:title" content="Our Work | Arch Electric">
+    <meta property="og:description" content="Quality electrical work across the Central Coast. View our recent projects including panel upgrades, EV chargers, lighting installations, and commercial electrical work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://archelectric831.com/our-work/">
+    <link rel="canonical" href="https://archelectric831.com/our-work/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-hero {
+            position: relative;
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, var(--darker) 0%, var(--gray-dark) 100%);
+            color: var(--white);
+            overflow: hidden;
+        }
+        .gallery-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            z-index: 0;
+        }
+        .gallery-hero .container { position: relative; z-index: 1; text-align: center; }
+        .gallery-hero h1 { font-family: var(--font-heading); font-size: 3rem; text-transform: uppercase; margin-bottom: 1rem; line-height: 1.1; }
+        .gallery-hero .highlight { color: var(--red); }
+        .gallery-hero-sub { font-size: 1.15rem; color: var(--gray-light); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+        .gallery-badge { display: inline-block; background: rgba(155,27,48,0.2); border: 1px solid var(--red); color: var(--white); padding: 6px 16px; border-radius: 4px; font-size: 0.85rem; margin-right: 10px; margin-bottom: 8px; }
+        
+        .project-section { padding: 80px 0; }
+        .project-section:nth-of-type(even) { background: var(--light); }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .project-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .project-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(26,26,26,0.8) 100%);
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-location {
+            color: var(--red);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .project-description {
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .project-tag {
+            background: var(--light);
+            color: var(--gray);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid var(--gray-light);
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-hero h1 { font-size: 2.25rem; }
+            .project-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .gallery-hero { padding: 120px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Arch Electric" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">ARCH ELECTRIC</span>
+                    <span class="logo-tagline">A+ is my only standard</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="our-work.html" class="active">Our Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#portal" class="nav-portal">Client Portal</a></li>
+                <li><a href="https://www.google.com/maps/place/Arch+Electric+%7C+831+Electrician/@36.867372,-121.7623285,10z/data=!4m6!3m5!1s0xa3d076a509efa8d7:0x40adf9248620164d!8m2!3d36.867372!4d-121.7623286!16s%2Fg%2F11v78pxtrq" class="btn-review" target="_blank" rel="noopener">⭐ Leave a Review</a></li>
+                <li><a href="contact.html" class="btn btn-nav">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="gallery-hero .container">
+            <div class="container">
+                <h1>Our <span class="highlight">Quality Work</span></h1>
+                <p class="gallery-hero-sub">Take a look at some of our recent electrical projects across the Central Coast. Every job represents our commitment to safety, quality, and customer satisfaction.</p>
+                <div class="gallery-badge">Licensed C-10 #945992</div>
+                <div class="gallery-badge">20+ Years Experience</div>
+                <div class="gallery-badge">Insured & Bonded</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+            <p class="section-sub">A showcase of our professional electrical work across Santa Cruz, Monterey, and San Benito counties.</p>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/watsonville-speedway-lighting-overview.jpg" alt="Watsonville Speedway lighting installation overview">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Speedway Lighting Installation</h3>
+                        <div class="project-location">Watsonville, CA</div>
+                        <p class="project-description">Complete lighting system upgrade for Watsonville Speedway. This project involved installing new light poles, underground conduit systems, and updated electrical infrastructure to meet modern safety standards.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Commercial Lighting</span>
+                            <span class="project-tag">Underground Wiring</span>
+                            <span class="project-tag">Light Poles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/watsonville-speedway-underground-wiring.jpg" alt="Underground electrical wiring installation">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Underground Infrastructure</h3>
+                        <div class="project-location">Watsonville, CA</div>
+                        <p class="project-description">Professional underground electrical installation with proper trenching, conduit placement, and conductor routing. All work performed to county electrical codes with proper inspection compliance.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Underground Wiring</span>
+                            <span class="project-tag">Conduit Installation</span>
+                            <span class="project-tag">Commercial Grade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/watsonville-speedway-pole-excavation.jpg" alt="Light pole foundation excavation work">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Light Pole Foundation</h3>
+                        <div class="project-location">Watsonville, CA</div>
+                        <p class="project-description">Precision excavation and foundation work for new light pole installation. Our team coordinates with excavation contractors to ensure proper depth, placement, and electrical rough-in for long-term stability.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Foundation Work</span>
+                            <span class="project-tag">Site Coordination</span>
+                            <span class="project-tag">Light Poles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/watsonville-speedway-fence-work.jpg" alt="Electrician performing fence line electrical work">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Perimeter Electrical Work</h3>
+                        <div class="project-location">Watsonville, CA</div>
+                        <p class="project-description">Professional electrical installation along perimeter fencing. Our experienced electricians ensure safe working practices while maintaining the integrity of existing structures and meeting all safety requirements.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Perimeter Wiring</span>
+                            <span class="project-tag">Safety Protocols</span>
+                            <span class="project-tag">Professional Install</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/watsonville-speedway-junction-box.jpg" alt="Electrical junction box and aged components">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">System Modernization</h3>
+                        <div class="project-location">Watsonville, CA</div>
+                        <p class="project-description">Replacement of aging electrical components with modern, code-compliant equipment. This junction box upgrade ensures safe operation and improved reliability for years to come.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">System Upgrade</span>
+                            <span class="project-tag">Junction Boxes</span>
+                            <span class="project-tag">Code Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready for Quality Electrical Work?</h2>
+            <p>Every project gets our full attention. No shortcuts, no compromises — just professional electrical work you can count on.</p>
+            <div class="hero-buttons">
+                <a href="tel:8313598747" class="btn btn-primary">📞 (831) 359-8747</a>
+                <a href="contact.html" class="btn btn-outline-light">Request a Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo footer-logo">
+                        <img src="logo.jpg" alt="Arch Electric" class="logo-img">
+                        <div class="logo-text">
+                            <span class="logo-name">ARCH ELECTRIC</span>
+                            <span class="logo-tagline">The Energy Experts</span>
+                        </div>
+                    </div>
+                    <p>Full-service electrical contractor serving the Tri-County area since 2009.</p>
+                    <p>CA License #945992</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📞 <a href="tel:8313598747">(831) 359-8747</a></li>
+                        <li>📍 Prunedale, CA</li>
+                        <li>🕐 Mon-Fri: 7AM - 6PM</li>
+                        <li>🕐 Sat: By Appointment</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>Monterey County</li>
+                        <li>Santa Cruz County</li>
+                        <li>San Benito County</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arch Electric. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
